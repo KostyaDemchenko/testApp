@@ -1,0 +1,2 @@
+import nextPwa from "next-pwa"; // default-экспорт 
+const withPWA = nextPwa({ dest: "public", register: true, skipWaiting: true, }); export default withPWA({ experimental: { appDir: true }, reactStrictMode: true, swcMinify: true, images: { formats: ["image/avif", "image/webp"] }, output: "export", });
